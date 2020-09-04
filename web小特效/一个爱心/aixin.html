@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一个爱心</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heart{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background: rgb(177, 96, 96);
+            transform: rotate(45deg);
+        }
+        .heart::before{
+            content: '';
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            background: rgb(177, 96, 96);
+            left: 0;
+            top: 0;
+        }
+        .heart::after{
+            content: '';
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            background: rgb(177, 96, 96);
+            left: 0;
+            top: 0;
+        }
+        .heart::before{
+            left: -100px;
+        }
+        .heart::after{
+            top: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>

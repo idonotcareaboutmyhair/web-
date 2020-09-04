@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 500px;
+    height: 20px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+
+}
+
+.progress-grow{
+    width: 100%;
+    height: 20px;
+    background: repeating-linear-gradient(45deg,#eee 0px,#eee 15px,#3158c4 16px,#3158c4 30px);
+    background-size: 42px 20px;
+    background-position: 0 0;
+    animation: grow 1s linear infinite;
+}
+
+@keyframes grow{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 42px 0;
+    }
+}
